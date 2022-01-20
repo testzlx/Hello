@@ -5,7 +5,7 @@
 #include "testrunnable.h"
 
 namespace tbsys {
-    TestRunnable::TestRunnable() {
+    TestRunnable::TestRunnable():CDefaultRunnable(3) {
         num = 5;
     }
 

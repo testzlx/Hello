@@ -4,9 +4,9 @@
 
 #ifndef HELLOWORLD_TESTRUNNABLE_H
 #define HELLOWORLD_TESTRUNNABLE_H
-#include "runnable.h"
+#include "defaultrunnable.h"
 namespace tbsys {
-    class TestRunnable : public Runnable{
+    class TestRunnable : public CDefaultRunnable{
         public:
             TestRunnable();
             ~TestRunnable();

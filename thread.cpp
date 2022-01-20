@@ -12,6 +12,6 @@ namespace tbsys {
             thread->getRunnable()->run(thread, thread->getArgs());
         }
 
-        return (void*) nullptr;
+        return (void*) NULL;
     }
 }

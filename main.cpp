@@ -19,9 +19,8 @@ void testStringUtil(){
 
 void testThread(){
     TestRunnable testRunnable;
-    CThread cThread;
-    cThread.start(&testRunnable, (void *)99);
-    cThread.join();
+    testRunnable.start();
+    testRunnable.wait();
 }
 
 int main() {
