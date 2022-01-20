@@ -3,7 +3,6 @@
 //
 #include <iostream>
 #include "testrunnable.h"
-#include "thread.h"
 
 namespace tbsys {
     TestRunnable::TestRunnable() {

@@ -4,16 +4,18 @@
 
 #ifndef HELLOWORLD_RUNNABLE_H
 #define HELLOWORLD_RUNNABLE_H
+
 #include "thread.h"
 
 namespace tbsys {
 
     class CThread;
+
 /**
  * @brief Runnable是一个抽象类，它拥有一个run纯虚方法
  * 主要用于Thread类
  */
-class Runnable {
+    class Runnable {
 
     public:
         /*
@@ -21,6 +23,7 @@ class Runnable {
          */
         virtual ~Runnable() {
         }
+
         /**
          * 运行入口函数
          */
