@@ -1,7 +1,7 @@
 #include <iostream>
 #include "stringutil.h"
 #include "testrunnable.h"
-#include "Atomic.h"
+#include "atomic.h"
 #include "threadmutex.h"
 
 using  namespace  tbsys;
