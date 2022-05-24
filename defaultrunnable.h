@@ -5,6 +5,7 @@
 #ifndef HELLOWORLD_DEFAULTRUNNABLE_H
 #define HELLOWORLD_DEFAULTRUNNABLE_H
 #include "runnable.h"
+#include "thread.h"
 namespace tbsys {
 
 /**

@@ -4,7 +4,8 @@
 #include "thread.h"
 
 namespace tbsys {
-    void* CThread::hook(void *arg) {
+
+     void* CThread::hook(void *arg) {
         CThread *thread = (CThread*) arg;
         thread->pid = 19384;
 
@@ -14,4 +15,5 @@ namespace tbsys {
 
         return (void*) NULL;
     }
+
 }

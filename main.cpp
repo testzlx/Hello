@@ -2,13 +2,14 @@
 #include "stringutil.h"
 #include "testrunnable.h"
 #include "Atomic.h"
+#include "threadmutex.h"
 
 using  namespace  tbsys;
 using  namespace  std;
 
 void testStringUtil(){
     cout << CStringUtil::isInt("21")<<endl;
-    char arr[]="ABC##BCD#G";
+    char arr[]="ABC#BCD#G";
     cout << CStringUtil::isInt(arr)<<endl;
     cout << CStringUtil::strToLower(arr)<<endl;
     vector<char*> result;
@@ -28,10 +29,16 @@ void testAtomic(){
     cout<< a.addAndGet(56)<<endl;
 }
 
+void testMutex(){
+    CThreadMutex mutex;
+
+}
+
 int main() {
     cout << "Hello, World!" <<endl;
     testStringUtil();
     testThread();
     testAtomic();
+    testMutex();
     return 0;
 }
